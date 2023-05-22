@@ -67,7 +67,7 @@ input.addEventListener(
         .then(data => {
           if (data.length > 10) {
             infoTooManyResults();
-          } else if (data.length >= 2 && data.length <= 10) {
+          } else if (data.length >= 2) {
             renderCountryList(data);
           } else if (data.length === 1) {
             renderOneCountry(data);
